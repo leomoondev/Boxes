@@ -20,7 +20,6 @@
         self.length = newLength;
     }
     return self;
-    
 }
 
 - (float)calculateVolume{
@@ -35,11 +34,12 @@
     float smallBoxVolume = [self calculateVolume];
     float bigBoxVolume = [box calculateVolume];
     int calculateFit = bigBoxVolume / smallBoxVolume;
+    
     if(smallBoxVolume >  bigBoxVolume) {
         NSLog(@"Invalid: The first box has bigger volume than the second box.\n");
     }
+    
     else {
-        
         NSLog(@"%d", calculateFit);
     }
     

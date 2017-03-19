@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "Box.h"
 
-
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
 
@@ -18,6 +17,7 @@ int main(int argc, const char * argv[]) {
         
         float firstBoxVolume = [firstBox calculateVolume];
         float secondBoxVolume = [secondBox calculateVolume];
+        
         NSLog(@"The volume of the first box is %.02f", firstBoxVolume);
         NSLog(@"The volume of the second box is %.02f", secondBoxVolume);
 
